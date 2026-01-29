@@ -1,0 +1,158 @@
+body {
+  margin-top: 0px;
+  font-family: QuickSand, sans-serif;
+  background-color: #fffbfb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #6b705c;
+  font-size: 45px;
+  font-weight: lighter;
+  text-shadow: 1px 2px 2px #c2c2c2;
+  align-items: center; /* Aligns children vertically */
+  height: 60px; /* Adjust this as needed */
+}
+
+.main-title {
+  text-decoration: none;
+  color: #6b705c;
+}
+
+.menu {
+  display: flex;
+  gap: 85px;
+}
+
+.menu a {
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: #6b705c;
+  font-family: QuickSand, sans-serif;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  display: block;
+  background-image: url(images/main.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.339);
+  background-blend-mode: lighten;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  text-align: center;
+  color: #fffbfb;
+}
+
+.hero {
+  margin-top: 270px; /* Move it down from the top */
+  text-align: center; /* Optional: left-align text */
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.661);
+  line-height: 5px;
+  font-size: 36px; /* Make it big enough to notice */
+  color: #fffbfb; /* Make sure it's visible */
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-group a:first-child {
+  margin-top: 30px;
+  background-color: #fffbfb;
+  color: #1e1e1e;
+  border: none;
+  padding: 12px 100px 12px 100px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 1px 10px 30px #6b705c;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.btn-group a:last-child {
+  margin-top: 30px;
+  background-color: #1e1e1e;
+  color: #fffbfb;
+  border: none;
+  padding: 12px 100px 12px 100px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 1px 10px 30px #6b705c;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.btn-group a:hover {
+  box-shadow: 1px 2px 30px #3f4238;
+}
+/* 🔽 MOBILE RESPONSIVENESS STARTS HERE */
+@media (max-width: 768px) {
+  /* 🔹 Make the header vertical and centered */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    font-size: 32px; /* smaller font on mobile */
+    gap: 10px;
+  }
+
+  /* 🔹 Stack the menu buttons vertically */
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .menu button {
+    font-size: 18px; /* easier to tap on mobile */
+  }
+
+  /* 🔹 Add padding inside the home section for breathing space */
+  .home {
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto; /* in case content overflows */
+  }
+
+  /* 🔹 Shrink and shift the hero text */
+  .hero {
+    margin-top: 120px; /* reduce vertical spacing */
+  }
+
+  .hero p {
+    font-size: 24px; /* more mobile-friendly */
+    line-height: 1.4;
+  }
+
+  /* 🔹 Stack buttons vertically and make them full-width */
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    gap: 16px;
+  }
+
+  .btn-group button {
+    padding: 12px 12px;
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+  }
+}
+/* 🔼 MOBILE RESPONSIVENESS ENDS HERE */
