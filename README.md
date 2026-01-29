@@ -8,7 +8,7 @@ https://deryucka.github.io/lingvo-homepage/
 
 ## Design File
 
-(Add Figma link here if you want)
+https://www.figma.com/design/vWg5mxgdBaB8DY9HjWBasX/LINGVO?node-id=0-1&t=AV3xs29mEvhzgufG-1
 
 ## Overview
 
